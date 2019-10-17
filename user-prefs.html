@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Place Keeper</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-nav">
+        <section class="logo">
+            <img src="/img/logo1.png" alt="">
+        </section>
+        <nav>
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="user-prefs.html">Setting</a></li>
+            <li><a href="map.html">Map</a></li>
+        
+        </nav>
+    </div>
+        <h1>PLACE KEEPER</h1>
+
+    </header>
+
+
+    <main>
+        <section class="form-container">
+            <form action="submit" class="user-date user-data" onchange="event.preventDefault()">
+                <label for="birth-date">Enter Your Birthday</label>
+                <input type="date" name="birth-date" id="birth-date">
+                <label for="birth-time">Enter Your Time Birth</label>
+                <input type="time" name="birth-time" id="birth-time">
+                <button type="submit" onchange="onSetBirthDay()">Set</button>
+            </form>
+            <form action="submit" class="user-color user-data">
+                <label for="color">Chose Your Background Color</label>
+                <input type="color" name="color" id="color" onchange="onBgcChange(this.value)">
+                <label for="txt-color">Chose Your Text Color</label>
+                <input type="color" name="txt-color" id="txt-color" onchange="onTxtChange(this.value)">
+            </form>
+        </section>
+    </main>
+    <script src="js/utils-service.js"></script>
+    <script src="js/prefs-service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
