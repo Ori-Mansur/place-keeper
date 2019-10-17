@@ -1,10 +1,10 @@
 @font-face{
     font-family: modak;
-    src: url(/fonts/Modak/Modak-Regular.ttf);
+    src: url(../fonts/Modak/Modak-Regular.ttf);
 }
 @font-face{
     font-family: oswald;
-    src: url(/fonts/Oswald/Oswald-VariableFont_wght.ttf);
+    src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
 }
 html{
     font-family:  oswald;
